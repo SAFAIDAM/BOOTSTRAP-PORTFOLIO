@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap");
+:root {
+  --primaryColor: #090909;
+  --secondColor: #f4f5cf;
+  --textColor: rgb(255, 255, 255);
+  --gray: rgba(42, 53, 62, 0.4);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: non !important;
+  border: none;
+  list-style: none;
+}
+body {
+  font-family: "Open Sans", "sans-serif";
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+  background-color: var(--primaryColor);
+  color: var(--textColor);
+}
+.navbar-brand {
+  position: relative;
+  width: 70px;
+  left: 10px;
+}
+#mainNavbar {
+  background-color: var(--primaryColor) !important;
+  border-bottom: 1px solid var(--gray);
+}
+#mainNavbar .nav-item .nav-link {
+  position: relative;
+  color: var(--textColor);
+}
+#mainNavbar .nav-item .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: var(--secondColor);
+  bottom: -3px;
+  left: 0;
+  transition: ease 0.4s;
+  -webkit-transition: ease 0.4s;
+  -moz-transition: ease 0.4s;
+  -ms-transition: ease 0.4s;
+  -o-transition: ease 0.4s;
+}
+#mainNavbar .nav-item::not(:last-child) .nav-link:hover::after {
+  width: 100%;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+  background-color: #745034 !important;
+  border-color: #745034;
+  outline: #745034;
+}
+/*hero section*/
+#hero .socia a:hover{
+  color: var(--secondColor);
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+#hero h1 .type{
+  color: var(--secondColor);
+}
